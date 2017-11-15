@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+: ${FTP_USER:='**String**'}
+: ${FTP_PASS:='**Random**'}
+: ${PASV_ADDRESS:='**IPv4**'}
+: ${PASV_MIN_PORT:=21100}
+: ${PASV_MAX_PORT:=21110}
+: ${LOG_STDOUT:='**Boolean**'}
+
+
 # If no env var for FTP_USER has been specified, use 'admin':
 if [ "$FTP_USER" = "**String**" ]; then
     export FTP_USER='admin'
